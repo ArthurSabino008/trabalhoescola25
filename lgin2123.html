@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="lgin2123.css">
+    <link rel="stylesheet" href="lgin2123.js">
+    <link href="lgin2123.json">
+    <link href="lgin2123.php">
+<link href="models.js">
+<link href="recup.js">
+<link href="recup.php">
+<link href="server.js">
+<link href="tabel.sql">
+<link href="verifyemail.js">
+<link href="classes.php">
+<link href="config.js">
+<link href="config.php">
+<link href="dashboard.php">
+<link href="database.php">
+
+</head>
+<body class="local--tela">
+    <div class="login-container">
+        <div class="login-form">
+            <div class="logo">
+                <img src="logo.png" alt="Logo do Site">
+            </div>
+            
+            <h2>Bem-vindo de volta</h2>
+            <p>Faça login em uma conta já existente</p>
+            
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Usuário ou E-mail" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="remember"> Lembrar-me
+                    </label>
+                    <a href="/forgot-password">Esqueci minha senha</a>
+                </div>
+                
+                <button type="submit" class="login-btn">Entrar</button>
+                
+                <div class="register-link">
+                    Não tem uma conta? <a href="/register">Cadastre-se</a>
+                </div>
+            </form>
+            
+            <div class="social-login">
+                <p>Ou entre com</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn google"><i class="fab fa-google"><img class="google-img" src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt=""></i></a>
+                    <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"><img class="facebook-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"></i></a>
+                    <a href="#" class="social-btn twitter"><i class="fab fa-twitter"><img class="twitter-img" src="https://static.vecteezy.com/system/resources/previews/031/737/206/non_2x/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-image">
+            <!-- Imagem de fundo opcional -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
